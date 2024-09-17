@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora',  sans-serif;
+
+}
+:root{
+    --background: #3b4c53;
+    --accent: #87ca8b;
+    --secondary: #DDC8C4;
+    --thirty: #86d0e6;
+    --text: #13070C;
+}
+body{
+    max-width:100%;
+    background-color: #e5e5e5;
+}
+
+main{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: var(--background);
+}
+main > img{
+    width: 100px;
+}
+
+.quedan{
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    color: #F4F4F4;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    background-color: var(--background);
+}
+.mostrar-ingresos , .mostrar-ingresoGastado{
+    gap: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.mostrar-ingresoGastado{
+    display: flex;
+    flex-flow: row wrap;
+}
+.mostrar-quedan{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.mostrar-quedan total > p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones{
+    gap: 20px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+}
+.botones > .buttons > a{
+    border: none;
+    padding: 10px;
+    display: flex;
+    font-size: 14px;
+    color: #F4F4F4;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    flex-flow: column wrap;
+    background-color: transparent;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.buttons >  img{
+    width: 20px;
+}
+
+
+.container--resumenGastos{
+    width: 100%;
+    margin: -30px 0;
+}
+.resumen{
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+}
+.resumen > h1{
+    font-size: 18px;
+    color: #6d6d6d;
+}
+.container--resumenGastos, .datos{
+    padding: 20px;
+}
+#resumenGastos{
+    display: flex;
+    flex-flow: column wrap;
+}
+p.gasto{
+    font-weight: bold;
+}
+.fechaHora{
+    width: 100%;
+    text-align: end;
+    font-size: 14px;
+}

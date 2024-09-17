@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora',  sans-serif;
+
+}
+:root{
+    --background: #3b4c53;
+    --accent: #87ca8b;
+    --secondary: #DDC8C4;
+    --thirty: #86d0e6;
+    --text: #13070C;
+}
+body{
+    max-width:100%;
+    background-color: var(--background);
+}
+
+.section{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.container{
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: white;
+}
+.container > h1{
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#historialTransacciones{
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.transaccion > .ingreso, .gasto {
+    font-weight: bold;
+}
+.fechaHora{
+    font-size: 12px;
+}
+
+.buttons{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.buttons > a, .buttons > a:visited{
+    color: white;
+    text-decoration: none;
+}
